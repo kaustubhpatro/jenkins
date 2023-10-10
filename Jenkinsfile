@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Install Python3') {
             steps {
-                sh 'whoami'
                 sh 'sudo apt-get update'
                 sh 'sudo apt-get install python3'
             }
