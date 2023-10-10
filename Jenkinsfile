@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Install Python3') {
             steps {
-                sh apt-get update
-                sh apt-get install python3
+                sh 'apt-get update'
+                sh 'apt-get install python3'
             }
         }
         stage('Run python file') {
